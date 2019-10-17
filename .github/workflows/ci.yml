@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run tests
       run: xcodebuild -project 'Numero.xcodeproj' -scheme 'Numero' -destination 'platform=iOS Simulator,name=iPhone 8' test
-    - name: Build app
+    - name: Build App
       run: xcodebuild -project 'Numero.xcodeproj' -scheme 'Numero' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
